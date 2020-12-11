@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gym</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+<style>
+body, html {
+  height: 100%;
+  font-family: 'Oswald', sans-serif;
+  overflow-x:hidden;
+margin-right:-15px;
+margin-left:-5px;
+margin-top:-2px;
+margin-bottom:-10px;
+}
+
+.navbar {
+margin: 0px -2000px;
+  padding: 0px 2000px;
+  overflow: hidden;
+  background-color: #000000;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+ }
+</style>
+</head>
+<body>
+<div class="navbar">
+  <img src="logo.png" width="100" height="70">
+  <a class="active" href="Training.html">Training</a>
+  <a href="Membership.html">Membership</a>
+  <a href="index.html">Home</a>
+</div>
+
+<h1 style="font-size:50px; padding-top:50px; padding-left:10px;"> <b>Membership Form</b></h1>
+
+<div class="container">
+<form action="">
+<h2><b><u>Personal Info:</b></u></h2>
+<label for ="fname">First Name:</label>
+<input style="width:15%" type= "text" id="fname" name="firstname" placeholder="type name.." required><br>
+
+<label for ="fname">Last Name:</label>
+<input style="width:15%" type= "text" id="lname" name="lastname" placeholder="type name.." required>
+
+<br>
+<label for ="mail">Email:</label>
+<input style="width:30%" type= "email" id="mail" name="email" placeholder="example@email.com" required>
+
+<h2><b><u>Address:</u></b></h2>
+
+<label for ="address">Address Line 1:</label>
+<input style="width:30%" type= "text" id="address" name="address" placeholder="123 Street Name" required>
+<br>
+<label for ="country">Country:</label>
+<input style="width:30%" type= "text" id="country" name="country" placeholder="Country" required>
+<br>
+<label for ="city">City:</label>
+<input style="width:30%" type= "text" id="city" name="city" placeholder="City Name" required>
+<br>
+<label for ="state">State:</label>
+<input style="width:30%" type= "text" id="state" name="state" placeholder="State" maxlength="2" required>
+<br>
+<label for ="Zip">Zip:</label>
+<input style="width:30%" type= "text" id="zip" name="zip" placeholder="Enter Zip" maxlength="5" pattern="[0-9]{5}" title="Numbers only">
+<br>
+<label for ="phone">Phone:</label>
+<input style="width:30%" type= "text" id="phone" name="phone" placeholder="Enter Phone number" required>
+
+<h2><b><u>Payment:</u></b></h2>
+<br>
+<label for ="CCN">Card Number:</label>
+<input style="width:30%" type= "text" id="CCN" name="CCnumber" placeholder="Credit Card Number" required>
+<br>
+<label for ="Exp">Expiration:</label>
+<input style="width:30%" type= "date" id="Exp" name="Expiration" placeholder="Expiration" required>
+<br>
+<label for ="CSC">CSC:</label>
+<input style="width:30%" type= "text" id="CSC" name="CSC" placeholder="xxx" required>
+<br>
+<label for ="CCName">Name on Card:</label>
+<input style="width:30%" type= "text" id="CCName" name="CCName" placeholder="Credit Card Holder Name" required>
+<br>
+<input type="submit" value="Submit" onclick="">
+<script>
+
+</script>
+
+
+</body>
+</html> 
